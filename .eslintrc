@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "@typescript-prettier", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
     "airbnb",
     "airbnb/hooks",
@@ -8,7 +8,6 @@
     "prettier",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:@typescript-prettier/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
   "env": {
