@@ -1,4 +1,4 @@
-import styles from './signup.module.scss';
+import styles from './signUp.module.scss';
 import Axios from '../../lib/axios';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';

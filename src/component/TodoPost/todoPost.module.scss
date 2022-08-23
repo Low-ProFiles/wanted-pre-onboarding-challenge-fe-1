@@ -1,0 +1,42 @@
+.postDiv {
+  width: 80%;
+  height: 50vh;
+  padding: 2% 3% 0;
+  margin: 0 auto;
+  background-color: rgb(240, 240, 255);
+  border-radius: 15px;
+
+  .postTitle {
+    width: 95%;
+    padding: 1%;
+    margin: 2% 1% 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+  }
+
+  .postContent {
+    width: 95%;
+    height: 38vh;
+    padding: 1%;
+    margin: 2% 1% 0;
+    margin-bottom: 2vh;
+    resize: none;
+    background-color: transparent;
+    border: none;
+
+    ::placeholder {
+      font-weight: 500;
+    }
+  }
+
+  .postButton {
+    width: 20%;
+    height: 5%;
+    margin-left: 40%;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+  }
+}
