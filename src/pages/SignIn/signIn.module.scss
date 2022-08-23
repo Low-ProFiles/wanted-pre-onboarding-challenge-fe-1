@@ -38,17 +38,8 @@ html {
       border: 2px solid rgb(32, 88, 55);
       border-radius: 5px;
 
-      &:first-child {
-        margin-top: 16px;
-        border-bottom-width: 1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-
-      &:nth-child(2) {
-        border-top-width: 1px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+      input + input {
+        background-color: red;
       }
     }
 

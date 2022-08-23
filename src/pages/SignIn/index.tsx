@@ -24,7 +24,7 @@ const SignIn = () => {
       alert('로그인 완료');
       navigate('/');
     } catch {
-      console.log('로그인 에러', e);
+      alert('로그인 실패');
     }
     setEmail('');
     setPassWord('');
@@ -49,7 +49,7 @@ const SignIn = () => {
       alert('이미 로그인 되었습니다.');
       navigate('/');
     }
-  }, );
+  });
 
   return (
     <div className={styles.signInForm}>
