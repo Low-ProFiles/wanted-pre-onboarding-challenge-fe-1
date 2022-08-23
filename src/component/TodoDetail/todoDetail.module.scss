@@ -1,0 +1,47 @@
+.detailDiv {
+  width: 80%;
+  height: 50vh;
+  padding: 2% 3% 0;
+  margin: 0 auto;
+  background-color: rgb(240, 240, 255);
+  border-radius: 15px;
+
+  .detailTitleOption {
+    display: flex;
+    justify-content: space-between;
+
+    .detailTitle {
+      padding: 2% 3% 0;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .detailOption {
+      display: flex;
+      justify-content: space-between;
+      width: 20%;
+      height: 10%;
+      margin-top: 3%;
+      margin-right: 5%;
+
+      button {
+        all: unset;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+
+  .detailContent {
+    width: 92%;
+    height: 40vh;
+    margin: 0 auto;
+    margin-top: 4%;
+  }
+
+  .detailDate {
+    width: 92%;
+    margin: 0 auto;
+    text-align: right;
+  }
+}
