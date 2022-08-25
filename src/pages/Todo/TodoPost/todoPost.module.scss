@@ -31,12 +31,18 @@
     }
   }
 
-  .postButton {
-    width: 20%;
-    height: 5%;
-    margin-left: 40%;
-    background-color: white;
-    border: none;
-    border-radius: 15px;
+  .buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: 0 auto;
+
+    .postButton {
+      width: 40%;
+      height: 5%;
+      background-color: white;
+      border: none;
+      border-radius: 15px;
+    }
   }
 }

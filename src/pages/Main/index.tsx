@@ -1,41 +1,38 @@
 import { useState } from 'react';
-import TodoDetail from '../../component/TodoDetail';
-import TodoItem from '../../component/TodoItem';
-import TodoPost from '../../component/TodoPost';
+import TodoDetail from '../Todo/TodoDetail';
+import TodoPost from '../Todo/TodoPost';
 import styles from './main.module.scss';
 import { PlusButton } from '../../assets/svgs';
+import TodoItem from '../Todo/TodoItem';
+import TodoList from '../Todo/TodoList';
 
 const Main = () => {
   const [isChecked, setIsChecked] = useState(false);
-  const title = '에바';
-  const date = '2022.08.23';
-  const content = '내용';
 
   const postButton = () => {
-    console.log('추가');
     setIsChecked(!isChecked);
   };
 
   return (
     <div className={styles.mainBody}>
-      <div className={styles.toDoDiv}>
-        <span className={styles.headText}>List</span>
-        <TodoItem title={title} date={date} content={content} />
+      <div className={styles.scrollDiv}>
+        <div className={styles.listDiv}>
+          <span className={styles.headText}>List</span>
+          <TodoList / >
+        </div>
       </div>
       <div className={styles.toDoDiv}>
         <span className={styles.headText}>Detail</span>
-        <TodoDetail title={title} date={date} content={content} />
+        <TodoDetail />
       </div>
       <div className={styles.toDoDiv}>
         <span className={styles.headText}>Post</span>
         {isChecked ? (
-          <TodoPost />
+          <TodoPost isChecked={isChecked} setIsChecked={setIsChecked} />
         ) : (
           <>
             <TodoItem />
-            <div className={styles.plusButton}>
-              <PlusButton onClick={postButton} />
-            </div>
+            <PlusButton onClick={postButton} />
           </>
         )}
       </div>
